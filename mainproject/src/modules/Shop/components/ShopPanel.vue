@@ -131,7 +131,7 @@ export default {
   
   methods: {
     feedback() {
-      window.open('http://localhost:3002/sentiment-analyzer', '_blank') // Replace with your React website's URL
+      window.open('https://sentiment.lffoodfest.live/', '_blank') // Replace with your React website's URL
     },
     disableAccount(){
       axios
