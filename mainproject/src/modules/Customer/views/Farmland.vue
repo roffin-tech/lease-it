@@ -49,7 +49,7 @@ export default {
         },
         async createOrder(advance, lid) {
             try {
-                const response = await axios.post('http://localhost:8080/api/razor-pay/order', {
+                const response = await axios.post('/api/razor-pay/order', {
                     amount: advance,  // amount in the smallest currency unit
                     currency: "INR",
                     receipt: "order_rcptid_11"
@@ -96,7 +96,7 @@ export default {
         },
         async updateLandBuy(lid) {
             await axios
-                .post("http://localhost:8080/api/users/lands-status-update/" + lid)
+                .post("/api/users/lands-status-update/" + lid)
                 .then((response) => {
                     this.farmlands = response.data
                     console.log('response', response);
@@ -120,7 +120,7 @@ export default {
         async fetchData() {
 
             await axios
-                .get("http://localhost:8080/api/users/lands/get")
+                .get("/api/users/lands/get")
                 .then((response) => {
                     this.farmlands = response.data
                     console.log('response', response);

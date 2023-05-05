@@ -40,7 +40,7 @@
     },
     mounted() {
       axios
-      .get("http://localhost:8080/api/users/landownerss/viewlist")
+      .get("/api/users/landownerss/viewlist")
       .then((response) => {
         this.custDetails = response.data
           console.log('response',response);

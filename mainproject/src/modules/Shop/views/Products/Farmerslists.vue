@@ -40,7 +40,7 @@
     },
     mounted() {
       axios
-      .get("http://localhost:8080/api/users/farmers/getlist")
+      .get("/api/users/farmers/getlist")
       .then((response) => {
         this.farmerDetail = response.data
           console.log('response',response);

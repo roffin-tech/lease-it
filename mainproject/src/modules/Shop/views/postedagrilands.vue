@@ -47,7 +47,7 @@
       async fetchData() {
           
           await axios
-              .get("http://localhost:8080/api/users/posted/postedagri/"+this.userName)
+              .get("/api/users/posted/postedagri/"+this.userName)
               .then((response) => {
                  this.ppagriland = response.data
                   console.log('response',response);

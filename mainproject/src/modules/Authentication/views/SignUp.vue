@@ -156,7 +156,7 @@ export default {
         this.$store.commit("setIsLoading", true);
         await axios({
                 method: "post",
-                url: "http://localhost:8080/api/users",
+                url: "/api/users",
                 data: formData,
             })
                 .then((res) => {

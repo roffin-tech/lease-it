@@ -274,7 +274,7 @@ export default {
 
     async getProfile() {
       axios
-        .get("http://localhost:8080/api/user/customer/viewfarmer/"+this.userId)
+        .get("/api/user/customer/viewfarmer/"+this.userId)
         .then((response) => {
           var profileData = response.data;
           // this.fullName = profileData.fullName;
@@ -305,7 +305,7 @@ export default {
       };
 
       axios
-        .put("http://localhost:8080/api/users/customer/updateprofile/"+this.userId, profileData)
+        .put("/api/users/customer/updateprofile/"+this.userId, profileData)
         .then((response) => {
           var profileData = response.data;
           this.fullName = profileData.fullName;

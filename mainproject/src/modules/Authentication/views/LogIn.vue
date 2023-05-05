@@ -131,7 +131,7 @@ export default {
         this.$store.commit("setIsLoading", true);
 
         await axios
-          .post("http://localhost:8080/api/users/login", formData)
+          .post("/api/users/login", formData)
           .then((response) => {
             
             const token = response.data.token;

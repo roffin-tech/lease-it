@@ -58,7 +58,7 @@
     },
     mounted() {
       axios
-      .get("http://localhost:8080/api/users/landownerslist/lists")
+      .get("/api/users/landownerslist/lists")
         .then((response) => {
           this.landownersDetails = response.data
           console.log('response',response);  

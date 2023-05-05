@@ -58,7 +58,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:8080/api/users/farmerslist/list")
+      .get("/api/users/farmerslist/list")
       .then((response) => {
         this.farmersDetails = response.data
           console.log('response',response);

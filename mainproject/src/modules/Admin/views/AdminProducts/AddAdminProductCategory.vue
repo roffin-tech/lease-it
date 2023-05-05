@@ -126,7 +126,7 @@ export default {
       };
 
       await axios
-        .post("http://localhost:8080/api/admin/products/category", formData)
+        .post("/api/admin/products/category", formData)
         .then((response) => {
           toast({
             message: "Category added successfully",

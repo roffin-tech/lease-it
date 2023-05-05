@@ -101,7 +101,7 @@ export default {
       };
 
       await axios
-        .put("http://localhost:8080/api/admin/shops", formData)
+        .put("/api/admin/shops", formData)
         .then((response) => {
           toast({
             message: "Crop Details successfully edited",

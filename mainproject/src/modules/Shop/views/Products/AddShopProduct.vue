@@ -313,7 +313,7 @@ pprice:"",
       };
 
       await axios
-        .post("http://localhost:8080/api/users/shop/product", formData)
+        .post("/api/users/shop/product", formData)
         .then((response) => {
           toast({
             message: "New land successfully added",

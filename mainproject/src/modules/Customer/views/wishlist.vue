@@ -213,7 +213,7 @@
         };
   
         await axios
-          .post("http://localhost:8080/api/users/customer/wishlist", formData)
+          .post("/api/users/customer/wishlist", formData)
           .then((response) => {
             toast({
               message: "Wishlist added successfully ",

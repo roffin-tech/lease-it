@@ -48,7 +48,7 @@
      
      
       axios
-        .get("http://localhost:8080/api/users/customer/wishlists/mywish")
+        .get("/api/users/customer/wishlists/mywish")
         .then((response) => {
           this.mywishlist = response.data
             console.log('response',response);

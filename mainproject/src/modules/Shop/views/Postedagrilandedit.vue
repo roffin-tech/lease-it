@@ -132,7 +132,7 @@ export default {
       };
 
       await axios
-        .post("http://localhost:8080/api/users/shop/product/updateland/"+this.$route.query.lid, formData)
+        .post("/api/users/shop/product/updateland/"+this.$route.query.lid, formData)
         .then((response) => {
           toast({
             message: " successfully updated",

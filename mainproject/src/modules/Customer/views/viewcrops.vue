@@ -38,7 +38,7 @@ export default {
         async fetchData() {
             
             await axios
-                .get("http://localhost:8080/api/users/crops/view")
+                .get("/api/users/crops/view")
                 .then((response) => {
                    this.viewcrop = response.data
                     console.log('response',response);

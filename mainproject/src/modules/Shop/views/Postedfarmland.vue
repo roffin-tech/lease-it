@@ -47,7 +47,7 @@
       async fetchData() {
           
           await axios
-              .get("http://localhost:8080/api/users/posted/postedfarm/"+this.userName)
+              .get("/api/users/posted/postedfarm/"+this.userName)
               .then((response) => {
                  this.pfarmland = response.data
                   console.log('response',response);

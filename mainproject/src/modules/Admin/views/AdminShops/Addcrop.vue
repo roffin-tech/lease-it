@@ -162,7 +162,7 @@
         };
   
         await axios
-          .put("http://localhost:8080/api/users/admin/shops/Addcrop", formData)
+          .put("/api/users/admin/shops/Addcrop", formData)
           .then((response) => {
             toast({
               message: "Crop added successfully",

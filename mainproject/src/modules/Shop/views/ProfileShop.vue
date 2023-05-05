@@ -300,7 +300,7 @@ export default {
 
     async getProfile() {
       axios
-        .get("http://localhost:8080/api/users/shop/getdetails/"+this.userId)
+        .get("/api/users/shop/getdetails/"+this.userId)
         .then((response) => { 
           var profileData = response.data; 
           // this.fullName = profileData.fullName;
@@ -331,7 +331,7 @@ export default {
       };
 
       axios
-        .put("http://localhost:8080/api/users/shop/update/"+this.userId, profileData)
+        .put("/api/users/shop/update/"+this.userId, profileData)
         .then((response) => {
           var profileData = response.data;
           this.fullName = profileData.fullName;

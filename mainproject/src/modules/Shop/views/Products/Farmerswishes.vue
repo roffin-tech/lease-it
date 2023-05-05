@@ -45,7 +45,7 @@
     },
     mounted() {
       axios
-      .get("http://localhost:8080/api/users/shop/wishlists/getwish")
+      .get("/api/users/shop/wishlists/getwish")
       .then((response) => {
         this.Detail = response.data
           console.log('response',response);

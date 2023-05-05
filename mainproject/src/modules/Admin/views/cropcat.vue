@@ -59,7 +59,7 @@
       methods: {
           async submitCategory(){
               axios
-              .post(`http://localhost:8080/admin/product/cropcat?category=${this.categoryName}`)
+              .post(`/admin/product/cropcat?category=${this.categoryName}`)
               .then((response) => {
                   console.log(response);
                   alert("Successfully added the category")

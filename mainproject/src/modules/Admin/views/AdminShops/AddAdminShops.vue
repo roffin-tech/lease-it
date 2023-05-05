@@ -126,7 +126,7 @@ export default {
       };
 
       await axios
-        .post("http://localhost:8080/api/admin/shops/add", formData)
+        .post("/api/admin/shops/add", formData)
         .then((response) => {
           toast({
             message: "Crop added successfully",

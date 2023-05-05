@@ -60,7 +60,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:8080/api/users/landowner/farmerslists")
+      .get("/api/users/landowner/farmerslists")
       .then((response) => {
         this.customersDetails = response.data;
 

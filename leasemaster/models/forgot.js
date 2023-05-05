@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       subject: "Password Reset",
       html: `
         <p>You have requested a password reset for your account.</p>
-        <p>Click <a href="http://localhost:8080/reset-password/${resetToken}">here</a> to reset your password.</p>
+        <p>Click <a href="/reset-password/${resetToken}">here</a> to reset your password.</p>
       `,
     };
     await transporter.sendMail(mailOptions);

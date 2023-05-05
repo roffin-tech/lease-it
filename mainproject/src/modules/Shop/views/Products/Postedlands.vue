@@ -31,7 +31,7 @@ export default {
       async fetchData() {
           
           await axios
-              .get("http://localhost:8080/api/users/land/posts")
+              .get("/api/users/land/posts")
               .then((response) => {
                  this.landCate = response.data
                   console.log('response',response);
