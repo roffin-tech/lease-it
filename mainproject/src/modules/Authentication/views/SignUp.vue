@@ -170,7 +170,7 @@ export default {
                 })
                 .catch((err) => {
                     this.userCreated = false;
-                    this.email_error = err.response.data.email;
+                    this.email_error = err?.response?.data?.email||'';
                 });
      
           this.$store.commit("setIsLoading", false);
